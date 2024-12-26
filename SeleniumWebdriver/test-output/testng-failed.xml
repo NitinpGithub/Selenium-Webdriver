@@ -3,15 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestNg.Annotations">
+      <class name="TestNg.Practise">
         <methods>
-          <include name="VarifyLoginWithInvalidUsernameAndValidPassword"/>
-          <include name="VarifyLoginWithValidUsernameAndInvalidPassword"/>
-          <include name="setup"/>
-          <include name="tearDown"/>
-          <include name="VarifyLoginWithValidCredential"/>
+          <include name="afterMethod"/>
+          <include name="t3"/>
+          <include name="beforeMethod"/>
+          <include name="t2"/>
         </methods>
-      </class> <!-- TestNg.Annotations -->
+      </class> <!-- TestNg.Practise -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

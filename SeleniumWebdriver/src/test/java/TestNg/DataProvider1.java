@@ -31,7 +31,7 @@ public class DataProvider1{
 		driver.quit();
 	}
 	
-	@Test(dataProvider="getTestData")//,dataProviderClass=DataProviderClass1.class)
+	@Test(dataProvider="getTestData",invocationCount=5)//,dataProviderClass=DataProviderClass1.class)
 	//public void VarifyLoginWithInValidCredential(String username,String password) {
 	public void VarifyLoginWithInValidCredential(String[] str) {
 		driver.findElement(By.xpath("//*[@id=\"user-name\"]")).sendKeys(str[0]);

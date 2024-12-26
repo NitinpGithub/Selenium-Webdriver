@@ -1,49 +1,185 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="1" failed="1" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-12-21T23:25:08 IST" name="Default suite" finished-at="2024-12-21T23:25:22 IST" duration-ms="14858">
+  <suite started-at="2024-12-26T18:41:24 IST" name="Default suite" finished-at="2024-12-26T18:41:24 IST" duration-ms="191">
     <groups>
     </groups>
-    <test started-at="2024-12-21T23:25:08 IST" name="Default test" finished-at="2024-12-21T23:25:22 IST" duration-ms="14858">
-      <class name="TestNg.Annotations">
-        <test-method is-config="true" signature="setup()[pri:0, instance:TestNg.Annotations@25ce9dc4]" started-at="2024-12-21T23:25:08 IST" name="setup" finished-at="2024-12-21T23:25:15 IST" duration-ms="7477" status="PASS">
+    <test started-at="2024-12-26T18:41:24 IST" name="Default test" finished-at="2024-12-26T18:41:24 IST" duration-ms="191">
+      <class name="TestNg.Practise">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:TestNg.Practise@8f2ef19]" started-at="2024-12-26T18:41:24 IST" name="beforeMethod" finished-at="2024-12-26T18:41:24 IST" duration-ms="23" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="VarifyLoginWithValidCredential()[pri:1, instance:TestNg.Annotations@25ce9dc4]" started-at="2024-12-21T23:25:15 IST" name="VarifyLoginWithValidCredential" finished-at="2024-12-21T23:25:16 IST" duration-ms="1297" status="PASS">
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="t1()[pri:0, instance:TestNg.Practise@8f2ef19]" started-at="2024-12-26T18:41:24 IST" name="t1" finished-at="2024-12-26T18:41:24 IST" duration-ms="15" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- VarifyLoginWithValidCredential -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestNg.Annotations@25ce9dc4]" started-at="2024-12-21T23:25:16 IST" name="tearDown" finished-at="2024-12-21T23:25:17 IST" duration-ms="479" status="PASS">
+        </test-method> <!-- t1 -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestNg.Practise@8f2ef19]" started-at="2024-12-26T18:41:24 IST" name="afterMethod" finished-at="2024-12-26T18:41:24 IST" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=t1 status=SUCCESS method=Practise.t1()[pri:0, instance:TestNg.Practise@8f2ef19] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:TestNg.Annotations@25ce9dc4]" started-at="2024-12-21T23:25:17 IST" name="setup" finished-at="2024-12-21T23:25:19 IST" duration-ms="1725" status="PASS">
+        </test-method> <!-- afterMethod -->
+        <test-method signature="t2()[pri:0, instance:TestNg.Practise@8f2ef19]" started-at="2024-12-26T18:41:24 IST" name="t2" finished-at="2024-12-26T18:41:24 IST" duration-ms="7" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Test2 failed]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Test2 failed
+at TestNg.Practise.t2(Practise.java:31)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="VarifyLoginWithValidUsernameAndInvalidPassword()[pri:2, instance:TestNg.Annotations@25ce9dc4]" started-at="2024-12-21T23:25:19 IST" name="VarifyLoginWithValidUsernameAndInvalidPassword" finished-at="2024-12-21T23:25:19 IST" duration-ms="468" status="PASS">
+        </test-method> <!-- t2 -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:TestNg.Practise@8f2ef19]" started-at="2024-12-26T18:41:24 IST" name="beforeMethod" finished-at="2024-12-26T18:41:24 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- VarifyLoginWithValidUsernameAndInvalidPassword -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestNg.Annotations@25ce9dc4]" started-at="2024-12-21T23:25:19 IST" name="tearDown" finished-at="2024-12-21T23:25:19 IST" duration-ms="291" status="PASS">
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestNg.Practise@8f2ef19]" started-at="2024-12-26T18:41:24 IST" name="afterMethod" finished-at="2024-12-26T18:41:24 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=t2 status=FAILURE method=Practise.t2()[pri:0, instance:TestNg.Practise@8f2ef19] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:TestNg.Annotations@25ce9dc4]" started-at="2024-12-21T23:25:19 IST" name="setup" finished-at="2024-12-21T23:25:21 IST" duration-ms="1944" status="PASS">
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:TestNg.Practise@8f2ef19]" started-at="2024-12-26T18:41:24 IST" name="beforeMethod" finished-at="2024-12-26T18:41:24 IST" duration-ms="2" status="SKIP">
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping test]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping test
+at TestNg.Practise.beforeMethod(Practise.java:17)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:600)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="VarifyLoginWithInvalidUsernameAndValidPassword()[pri:3, instance:TestNg.Annotations@25ce9dc4]" started-at="2024-12-21T23:25:21 IST" name="VarifyLoginWithInvalidUsernameAndValidPassword" finished-at="2024-12-21T23:25:22 IST" duration-ms="461" status="PASS">
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="t3()[pri:0, instance:TestNg.Practise@8f2ef19]" started-at="2024-12-26T18:41:24 IST" name="t3" finished-at="2024-12-26T18:41:24 IST" duration-ms="0" status="SKIP">
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping test]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping test
+at TestNg.Practise.beforeMethod(Practise.java:17)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:600)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- VarifyLoginWithInvalidUsernameAndValidPassword -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestNg.Annotations@25ce9dc4]" started-at="2024-12-21T23:25:22 IST" name="tearDown" finished-at="2024-12-21T23:25:22 IST" duration-ms="650" status="PASS">
+        </test-method> <!-- t3 -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestNg.Practise@8f2ef19]" started-at="2024-12-26T18:41:24 IST" name="afterMethod" finished-at="2024-12-26T18:41:24 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- TestNg.Annotations -->
+        </test-method> <!-- afterMethod -->
+      </class> <!-- TestNg.Practise -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
