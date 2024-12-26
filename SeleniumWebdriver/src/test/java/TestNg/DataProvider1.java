@@ -1,7 +1,5 @@
 package TestNg;
-
 import java.time.Duration;
-
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -45,16 +43,11 @@ public class DataProvider1{
 		driver.findElement(By.xpath("//*[@id=\"logout_sidebar_link\"]")).click();
 
 	}
-
-	
-	
-	
 	/* if we want to use method name for dataprovider then we can change 
 	DataProvider name like given below
 	
 	and this name we can pass to dataProvider when we can use these value
 	*/
-	
 	
 	/*
 	 Suppose ther are more number of data to be pass to method like
@@ -70,12 +63,7 @@ public class DataProvider1{
 	    driver.findElement(By.xpath("//*[@id=\"user-name\"]")).sendKeys(str[0]);
 		driver.findElement(By.xpath("//*[@id=\"password\"]")).sendKeys(str[1]);
 	 }
-	 
-	 
 	 */
-	
-	
-	
 	// single class can contain multiple data provider
 	@DataProvider(name="getTestData")
 	public String[][] LoginData()
@@ -87,9 +75,5 @@ public class DataProvider1{
 				{"performance_glitch_user","secret_sauce"}
 			};
 		return data;
-
 	}
-	
-	
-
 }
